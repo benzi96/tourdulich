@@ -1,0 +1,42 @@
+﻿@model entities.phancong
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>phancong</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.doandulich.chuongtrinhthamquan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doandulich.chuongtrinhthamquan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nhanvien.tennhanvien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nhanvien.tennhanvien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nhiemvu.tennhiemvu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nhiemvu.tennhiemvu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

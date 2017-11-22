@@ -165,3 +165,5 @@ create table chitietthanhtoan
 	foreign key (idphieuthanhtoan) references phieuthanhtoan(id)
 
 )
+
+alter table doandulich add tendoan nvarchar(200)

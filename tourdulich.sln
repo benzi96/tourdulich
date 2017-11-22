@@ -7,15 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tourdulichweb", "tourdulich
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tourdulichwin", "tourdulichwin\tourdulichwin.csproj", "{89033209-9F90-434A-ADCF-DEBFCE488EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entities", "entities\entities.csproj", "{44644E69-3124-4A4C-8ECD-E9AFA3F90B63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dal", "entities\dal.csproj", "{44644E69-3124-4A4C-8ECD-E9AFA3F90B63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bus", "bus\bus.csproj", "{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dal", "dal\dal.csproj", "{3BBE91B1-F9AC-4708-80A4-D9F1F8ABEBBE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7A1F95D-392A-401C-A166-9B2480D4FAA7}"
 	ProjectSection(SolutionItems) = preProject
 		tourdulich.sql = tourdulich.sql
+		xoadatabase.sql = xoadatabase.sql
 	EndProjectSection
 EndProject
 Global
@@ -40,10 +39,6 @@ Global
 		{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BBE91B1-F9AC-4708-80A4-D9F1F8ABEBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BBE91B1-F9AC-4708-80A4-D9F1F8ABEBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BBE91B1-F9AC-4708-80A4-D9F1F8ABEBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BBE91B1-F9AC-4708-80A4-D9F1F8ABEBBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,71 @@
+﻿@model entities.phieuthanhtoan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>phieuthanhtoan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tenphieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenphieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaytao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaytao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doandulich.tendoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doandulich.tendoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.loaiphieu.tenloaiphieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loaiphieu.tenloaiphieu)
+        </dd>
+
+    </dl>
+
+    <hr />
+    <table class="table" id="chitiet">
+        <tr>
+            <th>Tên chi phí</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+        </tr>
+        @if (Model != null)
+        {
+            foreach (var ct in Model.chitietthanhtoan)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => ct.tenchiphi)</td>
+                    <td>@Html.DisplayFor(modelItem => ct.soluong)</td>
+                    <td>@Html.DisplayFor(modelItem => ct.gia)</td>
+                </tr>
+            }
+        }
+    </table>
+    <hr />
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

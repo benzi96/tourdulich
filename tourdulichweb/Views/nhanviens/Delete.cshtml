@@ -1,0 +1,64 @@
+﻿@model entities.nhanvien
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>nhanvien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tennhanvien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tennhanvien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.socmnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.socmnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sodienthoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sodienthoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gioitinh1.tengioitinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gioitinh1.tengioitinh)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

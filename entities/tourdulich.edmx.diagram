@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a8fc5e2adefc42e788edc0b3ee2973fb" Name="Diagram1">
+        <EntityTypeShape EntityType="tourdulichModel.chitietdiemthamquan" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.chitietdoandulich" Width="1.5" PointX="7.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.chitietthanhtoan" Width="1.5" PointX="9.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.diadiem" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.doandulich" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.giatour" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.gioitinh" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.khachhang" Width="1.5" PointX="5.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.loaihinhdulich" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.loaiphieu" Width="1.5" PointX="5.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.nhanvien" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.nhiemvu" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.phancong" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.phieuthanhtoan" Width="1.5" PointX="7.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.tinhthanh" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tourdulichModel.tour" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="tourdulichModel.FK__chitietdi__iddia__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__chitietdi__idtou__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__chitietdo__iddoa__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__chitietdo__idkha__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__chitietth__idphi__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__diadiem__idtt__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__doandulic__idtou__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__phancong__iddoan__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__phieuthan__iddoa__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__giatour__idtour__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__khachhang__sodie__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__nhanvien__gioiti__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__tour__idlh__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__phieuthan__idloa__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__phancong__idnhan__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="tourdulichModel.FK__phancong__idnhie__44FF419A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,10 @@
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\entities.dll.config
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\entities.dll
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\entities.pdb
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\GitHub\tourdulich\entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Documents\GitHub\tourdulich\entities\obj\Debug\dal.csprojResolveAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\tourdulich\entities\obj\Debug\entities.dll
+C:\Users\pc\Documents\GitHub\tourdulich\entities\obj\Debug\entities.pdb

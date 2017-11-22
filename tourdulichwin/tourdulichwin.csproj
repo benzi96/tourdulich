@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,14 +52,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="forms\chitietdiemthamquanform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\chitietdiemthamquanform.Designer.cs">
+      <DependentUpon>chitietdiemthamquanform.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\giatourform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\giatourform.Designer.cs">
+      <DependentUpon>giatourform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\loaihinhdulichform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\loaihinhdulichform.Designer.cs">
+      <DependentUpon>loaihinhdulichform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\diadiemform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\diadiemform.Designer.cs">
+      <DependentUpon>diadiemform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\thongketourform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\thongketourform.Designer.cs">
+      <DependentUpon>thongketourform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\tinhhinhhoatdongtourform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\tinhhinhhoatdongtourform.Designer.cs">
+      <DependentUpon>tinhhinhhoatdongtourform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\tourform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\tourform.Designer.cs">
+      <DependentUpon>tourform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forms\tinhthanhform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\tinhthanhform.Designer.cs">
+      <DependentUpon>tinhthanhform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="forms\chitietdiemthamquanform.resx">
+      <DependentUpon>chitietdiemthamquanform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\giatourform.resx">
+      <DependentUpon>giatourform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\loaihinhdulichform.resx">
+      <DependentUpon>loaihinhdulichform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\diadiemform.resx">
+      <DependentUpon>diadiemform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\thongketourform.resx">
+      <DependentUpon>thongketourform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\tinhhinhhoatdongtourform.resx">
+      <DependentUpon>tinhhinhhoatdongtourform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\tourform.resx">
+      <DependentUpon>tourform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +142,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\tinhthanhform.resx">
+      <DependentUpon>tinhthanhform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +158,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bus\bus.csproj">
+      <Project>{a58d2ba7-0638-4ee1-ad5a-bbff046c2970}</Project>
+      <Name>bus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\entities\dal.csproj">
+      <Project>{44644e69-3124-4a4c-8ecd-e9afa3f90b63}</Project>
+      <Name>dal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

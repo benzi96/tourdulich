@@ -1,0 +1,110 @@
+﻿@model tourdulichweb.Models.doandulichviewmodel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>doandulich</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.doandulich.tendoan, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.doandulich.tendoan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.doandulich.tendoan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.doandulich.idtour, "idtour", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("doandulich.idtour", ViewBag.idtour as SelectList, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.doandulich.idtour, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.doandulich.ngaykhoihanh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.doandulich.ngaykhoihanh, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.ValidationMessageFor(model => model.doandulich.ngaykhoihanh, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.doandulich.ngayketthuc, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.doandulich.ngayketthuc, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.ValidationMessageFor(model => model.doandulich.ngayketthuc, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.doandulich.chuongtrinhthamquan, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.doandulich.chuongtrinhthamquan, 15, 20, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.doandulich.chuongtrinhthamquan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-inline">
+        <h4>Thêm khách hàng</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.LabelFor(model => model.chitietdoandulich.idkhachhang, "Số chứng minh nhân dân -- Tên khách hàng")
+        <div class="form-group">
+            @Html.DropDownList("idkhachhang", null, htmlAttributes: new { @class = "form-control", @id = "item" })
+            @Html.ValidationMessageFor(model => model.chitietdoandulich.idkhachhang, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            <input type="button" id="btnAdd" class="btn btn-default" value="Add" />
+        </div>
+    </div>
+    <hr />
+    <table class="table" id="chitiet">
+        <tr>
+            <td>Mã khách hàng</td>
+            <th>Số chứng minh nhân dân -- Tên khách hàng</th>
+            <th></th>
+        </tr>
+        @if (Model != null)
+        {
+            foreach (var ct in Model.doandulich.chitietdoandulich)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => ct.idkhachhang)</td>
+                    <td>@Html.DisplayFor(modelItem => ct.khachhang.socmnd) -- @Html.DisplayFor(modelItem => ct.khachhang.tenkhachhang)</td>
+                    <td><button class="btn btn-danger btnDelete">Delete</button></td>
+                    @Html.Hidden("ct.Index", ct.id)
+                    @Html.Hidden("ct[" + ct.id + "].idkhachhang", ct.idkhachhang)
+                </tr>
+            }
+        }
+    </table>
+    <hr />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/mycustomjquery")
+}

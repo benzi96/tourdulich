@@ -1,0 +1,76 @@
+﻿@model entities.doandulich
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>doandulich</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ngaykhoihanh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngaykhoihanh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ngayketthuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ngayketthuc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.chuongtrinhthamquan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.chuongtrinhthamquan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tendoan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tendoan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tour.tentour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tour.tentour)
+        </dd>
+
+    </dl>
+</div>
+<hr />
+<table class="table" id="chitiet">
+    <tr>
+        <td>Mã khách hàng</td>
+        <th>Số chứng minh nhân dân -- Tên khách hàng</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var ct in Model.chitietdoandulich)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => ct.idkhachhang)</td>
+                <td>@Html.DisplayFor(modelItem => ct.khachhang.socmnd) --  @Html.DisplayFor(modelItem => ct.khachhang.tenkhachhang)</td>
+            </tr>
+        }
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

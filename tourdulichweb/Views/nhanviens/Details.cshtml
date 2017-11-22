@@ -1,0 +1,58 @@
+﻿@model entities.nhanvien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>nhanvien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tennhanvien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tennhanvien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.socmnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.socmnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diachi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diachi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sodienthoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sodienthoai)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gioitinh1.tengioitinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gioitinh1.tengioitinh)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
