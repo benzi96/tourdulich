@@ -160,7 +160,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bus\Core.csproj">
+    <ProjectReference Include="..\Core\Core.csproj">
       <Project>{a58d2ba7-0638-4ee1-ad5a-bbff046c2970}</Project>
       <Name>Core</Name>
     </ProjectReference>

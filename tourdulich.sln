@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tourdulichweb", "tourdulich
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tourdulichwin", "tourdulichwin\tourdulichwin.csproj", "{89033209-9F90-434A-ADCF-DEBFCE488EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "bus\Core.csproj", "{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D7A1F95D-392A-401C-A166-9B2480D4FAA7}"
 	ProjectSection(SolutionItems) = preProject
 		tourdulich.sql = tourdulich.sql
 		xoadatabase.sql = xoadatabase.sql
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A58D2BA7-0638-4EE1-AD5A-BBFF046C2970} = {D7A1F95D-392A-401C-A166-9B2480D4FAA7}
 	EndGlobalSection
 EndGlobal
