@@ -1,0 +1,65 @@
+﻿@model tourdulichweb.Models.thongkenhanvienviewmodel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm("Index", "thongkenhanvien", FormMethod.Get))
+{
+    <div class="form-inline">
+        @Html.Label("Tên nhân viên")
+        <div class="form-group">
+            @Html.DropDownList("idnhanvien", null, new { @class = "form-control" })
+        </div>
+        @Html.Label("Từ ngày")
+        <div class="form-group input-group-sm">
+            @Html.TextBox("tungay", null, new { @class = "form-control datepicker", placeholder = "Enter Drop-off date here...", autocomplete = "off" })
+        </div>
+        @Html.Label("Đến ngày")
+        <div class="form-group input-group-sm">
+            @Html.TextBox("denngay", null, new { @class = "form-control datepicker", placeholder = "Enter Drop-off date here...", autocomplete = "off" })
+        </div>
+        <div class="form-group">
+            <div>
+                <input type="submit" value="Index" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            Tên nhân viên
+        </th>
+        <th>
+            Tên tour
+        </th>
+        <th>
+            Số lần
+        </th>
+    </tr>
+    @if (Model.sldts != null)
+    {
+        foreach (var item in Model.sldts)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tennv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tentour)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.solan)
+                </td>
+            </tr>
+        }
+    }
+</table>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/mycustomjquery")
+}

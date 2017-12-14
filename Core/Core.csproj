@@ -62,12 +62,13 @@
     <Compile Include="bus\tourbus.cs" />
     <Compile Include="dal\GenericRepository.cs" />
     <Compile Include="dal\IRepository.cs" />
+    <Compile Include="dto\solanditour.cs" />
     <Compile Include="dto\chitietdiemthamquandto.cs" />
     <Compile Include="dto\chitietchiphi.cs" />
     <Compile Include="dto\chitietdoanhthu.cs" />
     <Compile Include="dto\diadiemdto.cs" />
     <Compile Include="dto\giatourdto.cs" />
-    <Compile Include="dto\khachhangdto.cs" />
+    <Compile Include="dto\nguoidto.cs" />
     <Compile Include="dto\loaihinhdulichdto.cs" />
     <Compile Include="dto\tinhhinhhoatdongcuatour.cs" />
     <Compile Include="dto\tinhthanhdto.cs" />

@@ -19,9 +19,9 @@ namespace Core.bus
             db1 = new GenericRepository<tour>();
             db2 = new GenericRepository<khachhang>();
         }
-        public List<khachhangdto> listkh()
+        public List<nguoidto> listkh()
         {
-            return db2.GetAll().Select(c => new khachhangdto(c)).ToList();
+            return db2.GetAll().Select(c => new nguoidto(c)).ToList();
         }
         public bool add(doandulich ddl)
         {

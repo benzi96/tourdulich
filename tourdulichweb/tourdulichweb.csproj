@@ -147,6 +147,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\thongkenhanvienController.cs" />
     <Compile Include="Controllers\thongkechiphiController.cs" />
     <Compile Include="Controllers\doandulichesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -160,6 +161,7 @@
     </Compile>
     <Compile Include="Models\doandulichviewmodel.cs" />
     <Compile Include="Models\phieuthanhtoanviewmodel.cs" />
+    <Compile Include="Models\thongkenhanvienviewmodel.cs" />
     <Compile Include="Models\thongkechiphiviewmodel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -276,6 +278,7 @@
     <Content Include="Views\phancongs\Edit.cshtml" />
     <Content Include="Views\phancongs\Index.cshtml" />
     <Content Include="Views\thongkechiphi\Index.cshtml" />
+    <Content Include="Views\thongkenhanvien\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
