@@ -6,9 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using entities;
-using bus.bus;
-using bus.dto;
+using Core;
+using Core.bus;
+using Core.dto;
 using tourdulichweb.Models;
 
 namespace tourdulichweb.Controllers

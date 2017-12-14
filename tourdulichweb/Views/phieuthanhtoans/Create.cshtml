@@ -26,7 +26,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.phieuthanhtoan.idloaiphieu, "idloaiphieu", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("idloaiphieu", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("phieuthanhtoan.idloaiphieu", ViewBag.idloaiphieu as SelectList, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.phieuthanhtoan.idloaiphieu, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.phieuthanhtoan.iddoandulich, "iddoandulich", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("iddoandulich", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("phieuthanhtoan.iddoandulich", ViewBag.iddoandulich as SelectList, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.phieuthanhtoan.iddoandulich, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.phieuthanhtoan.ngaytao, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.phieuthanhtoan.ngaytao, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.EditorFor(model => model.phieuthanhtoan.ngaytao, new { htmlAttributes = new { @class = "form-control datepicker", autocomplete = "off"} })
                 @Html.ValidationMessageFor(model => model.phieuthanhtoan.ngaytao, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -57,10 +57,12 @@
             @Html.EditorFor(model => model.chitietthanhtoan.tenchiphi, new { htmlAttributes = new { @class = "form-control", @id="item1" } })
             @Html.ValidationMessageFor(model => model.chitietthanhtoan.tenchiphi, "", new { @class = "text-danger" })
         </div>
+        @Html.LabelFor(model => model.chitietthanhtoan.tenchiphi, "Số lượng")
         <div class="form-group">
             @Html.EditorFor(model => model.chitietthanhtoan.soluong, new { htmlAttributes = new { @class = "form-control", @id = "item2" } })
             @Html.ValidationMessageFor(model => model.chitietthanhtoan.soluong, "", new { @class = "text-danger" })
         </div>
+        @Html.LabelFor(model => model.chitietthanhtoan.tenchiphi, "Đơn giá")
         <div class="form-group">
             @Html.EditorFor(model => model.chitietthanhtoan.gia, new { htmlAttributes = new { @class = "form-control", @id = "item3" } })
             @Html.ValidationMessageFor(model => model.chitietthanhtoan.gia, "", new { @class = "text-danger" })
@@ -86,17 +88,17 @@
                     <td>@Html.DisplayFor(modelItem => ct.soluong)</td>
                     <td>@Html.DisplayFor(modelItem => ct.gia)</td>
                     <td><button class="btn btn-danger btnDelete">Delete</button></td>
-                    @Html.Hidden("ct.Index", ct.id)
-                    @Html.Hidden("ct[" + ct.id + "].tenchiphi", ct.tenchiphi)
-                    @Html.Hidden("ct[" + ct.id + "].soluong", ct.soluong)
-                    @Html.Hidden("ct[" + ct.id + "].gia", ct.gia)
+                    @Html.Hidden("ct.Index", "a"+ct.id)
+                    @Html.Hidden("ct[a" + ct.id + "].tenchiphi", ct.tenchiphi)
+                    @Html.Hidden("ct[a" + ct.id + "].soluong", ct.soluong)
+                    @Html.Hidden("ct[a" + ct.id + "].gia", ct.gia)
                 </tr>
             }
         }
     </table>
     <hr />
     <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
+        <div>
             <input type="submit" value="Create" class="btn btn-default" />
         </div>
     </div>

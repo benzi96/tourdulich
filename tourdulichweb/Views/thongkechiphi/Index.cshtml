@@ -27,6 +27,9 @@
 <table class="table">
     <tr>
         <th>
+            Ngày
+        </th>
+        <th>
             Tên chi phí
         </th>
         <th>
@@ -39,24 +42,31 @@
             Tổng
         </th>
     </tr>
-
-@foreach (var item in Model.ctcps) {
+    @if (Model.ctcps != null)
+    {
+        foreach (var item in Model.ctcps)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngay)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tenchiphi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.soluong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tong)
+                </td>
+            </tr>
+        }
+    }
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.tenchiphi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.soluong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.gia)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.tong)
-        </td>
-    </tr>
-}
-    <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>

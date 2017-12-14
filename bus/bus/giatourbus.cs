@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using entities;
-using bus.dto;
+using Core;
+using Core.dto;
 
-namespace bus.bus
+namespace Core.bus
 {
     public class giatourbus
     {

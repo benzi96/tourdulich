@@ -1,6 +1,6 @@
-﻿using entities;
+﻿using Core;
 
-namespace bus.dto
+namespace Core.dto
 {
     public class tourdto
     {

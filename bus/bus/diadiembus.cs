@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using bus.dto;
-using entities;
+using Core.dto;
+using Core;
 
-namespace bus.bus
+namespace Core.bus
 {
     public class diadiembus
     {

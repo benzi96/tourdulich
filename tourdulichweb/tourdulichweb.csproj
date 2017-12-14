@@ -293,13 +293,9 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bus\bus.csproj">
+    <ProjectReference Include="..\bus\Core.csproj">
       <Project>{a58d2ba7-0638-4ee1-ad5a-bbff046c2970}</Project>
-      <Name>bus</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\entities\dal.csproj">
-      <Project>{44644e69-3124-4a4c-8ecd-e9afa3f90b63}</Project>
-      <Name>dal</Name>
+      <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

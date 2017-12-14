@@ -1,0 +1,9 @@
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\bus.dll.config
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\bus.dll
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\bus.pdb
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\GitHub\tourdulich\bus\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Documents\GitHub\tourdulich\bus\obj\Debug\bus.dll
+C:\Users\pc\Documents\GitHub\tourdulich\bus\obj\Debug\bus.pdb

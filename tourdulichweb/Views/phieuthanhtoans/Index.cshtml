@@ -1,4 +1,4 @@
-﻿@model IEnumerable<entities.phieuthanhtoan>
+﻿@model IEnumerable<Core.phieuthanhtoan>
 
 @{
     ViewBag.Title = "Index";
@@ -18,7 +18,7 @@
             @Html.DisplayNameFor(model => model.ngaytao)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.doandulich.chuongtrinhthamquan)
+            @Html.DisplayNameFor(model => model.doandulich.tendoan)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.loaiphieu.tenloaiphieu)
@@ -35,15 +35,14 @@
             @Html.DisplayFor(modelItem => item.ngaytao)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.doandulich.chuongtrinhthamquan)
+            @Html.DisplayFor(modelItem => item.doandulich.tendoan)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.loaiphieu.tenloaiphieu)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+            @Html.ActionLink("Details", "Details", new { id=item.id })
         </td>
     </tr>
 }

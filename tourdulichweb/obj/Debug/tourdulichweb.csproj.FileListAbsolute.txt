@@ -30,7 +30,8 @@ C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\tourdulichweb.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\tourdulichweb.pdb
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Antlr3.Runtime.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\bus.dll
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\entities.dll
+C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.dll
+C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.SqlServer.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -49,11 +50,10 @@ C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\System.Web.WebPages.De
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\System.Web.WebPages.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\System.Web.WebPages.Razor.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\WebGrease.dll
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\bus.pdb
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\bus.dll.config
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\entities.pdb
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\entities.dll.config
+C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.xml
+C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.SqlServer.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\System.Web.Helpers.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\System.Web.Mvc.xml
@@ -69,9 +69,6 @@ C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.Dependenc
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\Microsoft.AI.Web.xml
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.xml
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\obj\Debug\tourdulichweb.csprojResolveAssemblyReference.cache
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\obj\Debug\tourdulichweb.dll
 C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\obj\Debug\tourdulichweb.pdb
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.SqlServer.dll
-C:\Users\pc\Documents\GitHub\tourdulich\tourdulichweb\bin\EntityFramework.SqlServer.xml

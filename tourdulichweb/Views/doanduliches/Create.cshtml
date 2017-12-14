@@ -35,7 +35,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.doandulich.ngaykhoihanh, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.doandulich.ngaykhoihanh, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.EditorFor(model => model.doandulich.ngaykhoihanh, new { htmlAttributes = new { @class = "form-control datepicker", autocomplete = "off" } })
                 @Html.ValidationMessageFor(model => model.doandulich.ngaykhoihanh, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -43,7 +43,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.doandulich.ngayketthuc, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.doandulich.ngayketthuc, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.EditorFor(model => model.doandulich.ngayketthuc, new { htmlAttributes = new { @class = "form-control datepicker", autocomplete = "off" } })
                 @Html.ValidationMessageFor(model => model.doandulich.ngayketthuc, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -51,7 +51,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.doandulich.chuongtrinhthamquan, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.doandulich.chuongtrinhthamquan, 15, 20, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextAreaFor(model => model.doandulich.chuongtrinhthamquan, 30, 1000, htmlAttributes:  new { @class = "form-control"})
                 @Html.ValidationMessageFor(model => model.doandulich.chuongtrinhthamquan, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -93,7 +93,7 @@
     </table>
     <hr />
     <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
+        <div>
             <input type="submit" value="Create" class="btn btn-default" />
         </div>
     </div>

@@ -49,98 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chitietdiemthamquan.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="chitietdoandulich.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="chitietthanhtoan.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="diadiem.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="doandulich.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GenericRepository.cs" />
     <Compile Include="GenericRepository2.cs" />
-    <Compile Include="giatour.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="gioitinh.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="IRepository.cs" />
-    <Compile Include="khachhang.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="loaihinhdulich.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="loaiphieu.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="nhanvien.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="nhiemvu.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="phancong.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="phieuthanhtoan.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tinhthanh.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tour.cs">
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tourdulich.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tourdulich.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tourdulich.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tourdulich.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tourdulich.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tourdulich.edmx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="tourdulich.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>tourdulich.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <None Include="tourdulich.edmx.diagram">
-      <DependentUpon>tourdulich.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="tourdulich.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>tourdulich.Context.cs</LastGenOutput>
-      <DependentUpon>tourdulich.edmx</DependentUpon>
-    </Content>
-    <Content Include="tourdulich.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>tourdulich.edmx</DependentUpon>
-      <LastGenOutput>tourdulich.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

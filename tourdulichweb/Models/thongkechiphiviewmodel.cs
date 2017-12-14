@@ -1,4 +1,4 @@
-﻿using bus.dto;
+﻿using Core.dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace tourdulichweb.Models
     {
         public string tenloaiphieu { get; set; }
         public List<chitietchiphi> ctcps { get; set; }
-        public decimal tong { get; set; }
+        public string tong { get; set; }
 
         public thongkechiphiviewmodel(List<chitietchiphi> cts, int i)
         {
@@ -23,11 +23,15 @@ namespace tourdulichweb.Models
                 case 4: tenloaiphieu = "Phiếu thanh toán cho chi phí khác"; break;
                 case 5: tenloaiphieu = "Tổng các chi phí"; break;
             }
-            tong = 0;
-            foreach(chitietchiphi ct in ctcps)
+            decimal tongs = 0;
+            if (cts != null)
             {
-                tong += ct.tong;
+                foreach (chitietchiphi ct in ctcps)
+                {
+                    tongs += ct.tongs;
+                }
             }
+            tong = String.Format("{0:C}", tongs);
         }
     }
 }

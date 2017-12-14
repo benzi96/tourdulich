@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using entities;
-using bus.dto;
+using Core;
+using Core.dto;
 
-namespace bus.bus
+namespace Core.bus
 {
     public class thongketourbus
     {
@@ -30,9 +30,9 @@ namespace bus.bus
             var doandulichs = db.Find(c => c.idtour == idtour);
             foreach(doandulich ct in doandulichs )
             {
-                decimal gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh).gia;
+                decimal gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour).gia;
                 int soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
-                tong = gia * soluongkhach;
+                tong+= gia * soluongkhach;
             }
             return tong;
         }
@@ -46,7 +46,7 @@ namespace bus.bus
                 chitietdoanhthu ctdt = new chitietdoanhthu();
                 ctdt.tendoan = ct.tendoan;
                 ctdt.tentour = ct.tour.tentour;
-                ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh).gia;
+                ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour==idtour).gia;
                 ctdt.soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
                 ctdt.tong = ctdt.gia * ctdt.soluongkhach;
                 ctdt.tongchiphi = tkcpbus.tongchiphi(ct.id);
@@ -69,6 +69,7 @@ namespace bus.bus
                 ctdt.tong = ctdt.gia * ctdt.soluongkhach;
                 ctdt.tongchiphi = tkcpbus.tongchiphi(ct.id);
                 ctdt.doanhthu = ctdt.tong - ctdt.tongchiphi;
+		        cts.Add(ctdt);
             }
             return cts;
         }

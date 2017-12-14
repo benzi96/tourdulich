@@ -1,4 +1,4 @@
-﻿@model IEnumerable<entities.phancong>
+﻿@model IEnumerable<Core.phancong>
 
 @{
     ViewBag.Title = "Index";
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.doandulich.chuongtrinhthamquan)
+            @Html.DisplayNameFor(model => model.doandulich.tendoan)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.nhanvien.tennhanvien)
@@ -26,7 +26,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.doandulich.chuongtrinhthamquan)
+            @Html.DisplayFor(modelItem => item.doandulich.tendoan)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.nhanvien.tennhanvien)

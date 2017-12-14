@@ -1,11 +1,11 @@
-﻿using entities;
+﻿using Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bus.bus
+namespace Core.bus
 {
     public class nhiemvubus
     {

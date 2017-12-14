@@ -20,7 +20,7 @@ $('#btnAdd1').click(function () {
     $('#chitiet').append(
         "<tr>" +
         "<td>" + $('#item1').val() + "</td> " +
-        "<td>" + $('"#item2').val() + "</td>" +
+        "<td>" + $('#item2').val() + "</td>" +
         "<td>" + $('#item3').val() + "</td>" +
         '<td><button class="btn btn-danger btnDelete">Delete</button></td>' +
         '<input type="hidden" name="ct.Index" value="' + (dynamicId - 1) + '" />' +

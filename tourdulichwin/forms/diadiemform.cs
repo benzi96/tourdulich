@@ -1,5 +1,5 @@
-﻿using bus.bus;
-using entities;
+﻿using Core.bus;
+using Core;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;

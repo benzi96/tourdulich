@@ -1,9 +1,9 @@
-﻿using bus.dto;
-using entities;
+﻿using Core.dto;
+using Core;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace bus.bus
+namespace Core.bus
 {
     public class tourbus
     {

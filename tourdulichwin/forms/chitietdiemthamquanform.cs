@@ -1,5 +1,5 @@
-﻿using bus.bus;
-using entities;
+﻿using Core.bus;
+using Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +19,12 @@ namespace tourdulichwin.forms
         {
             InitializeComponent();
             ctdtqbus = new chitietdiemthamquanbus();
+            comboBox1.DataSource = new BindingSource(ctdtqbus.listt(), null);
+            comboBox1.DisplayMember = "Value";
+            comboBox1.ValueMember = "Key";
+            comboBox2.DataSource = new BindingSource(ctdtqbus.listdd(), null);
+            comboBox2.DisplayMember = "Value";
+            comboBox2.ValueMember = "Key";
         }
 
         private void button1_Click(object sender, EventArgs e)
