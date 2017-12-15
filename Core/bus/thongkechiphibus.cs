@@ -25,7 +25,7 @@ namespace Core.bus
         }
         public List<chitietchiphi> chiphi(int iddoandulich)
         {
-            return db.Find(c => c.phieuthanhtoan.doandulich.id == iddoandulich).OrderBy(c => c.phieuthanhtoan.loaiphieu)
+            return db.Find(c => c.phieuthanhtoan.doandulich.id == iddoandulich).OrderBy(c => c.phieuthanhtoan.loaiphieu.id)
                      .AsEnumerable()
                      .Select(c => new chitietchiphi(c)).ToList();
         }
