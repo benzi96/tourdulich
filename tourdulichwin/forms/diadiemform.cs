@@ -46,7 +46,7 @@ namespace tourdulichwin.forms
                 {
                     currentid = Convert.ToInt32(row.Cells[0].Value.ToString());
                     tenddtxt.Text = row.Cells[1].Value.ToString();
-                    tenttcbb.SelectedItem = row.Cells[2].Value.ToString();
+                    tenttcbb.SelectedIndex = tenttcbb.FindString(row.Cells[2].Value.ToString());
                 }
             }
         }

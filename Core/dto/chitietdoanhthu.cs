@@ -12,8 +12,8 @@ namespace Core.dto
         public string tendoan { get; set; }
         [System.ComponentModel.DisplayName("Tên tour")]
         public string tentour { get; set; }
-        [System.ComponentModel.DisplayName("Thời điểm")]
-        public DateTime thoidiem { get; set; }
+        //[System.ComponentModel.DisplayName("Thời điểm")]
+        //public DateTime thoidiem { get; set; }
         [System.ComponentModel.DisplayName("Giá tour")]
         public decimal gia { get; set; }
         [System.ComponentModel.DisplayName("Số lượng khách hàng")]

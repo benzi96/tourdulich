@@ -263,7 +263,6 @@
     <Content Include="Views\doanduliches\Edit.cshtml" />
     <Content Include="Views\doanduliches\Index.cshtml" />
     <Content Include="Views\phieuthanhtoans\Create.cshtml" />
-    <Content Include="Views\phieuthanhtoans\Delete.cshtml" />
     <Content Include="Views\phieuthanhtoans\Details.cshtml" />
     <Content Include="Views\phieuthanhtoans\Edit.cshtml" />
     <Content Include="Views\phieuthanhtoans\Index.cshtml" />

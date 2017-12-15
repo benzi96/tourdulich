@@ -30,9 +30,13 @@ namespace Core.bus
             var doandulichs = db.Find(c => c.idtour == idtour);
             foreach(doandulich ct in doandulichs )
             {
-                decimal gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour).gia;
-                int soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
-                tong+= gia * soluongkhach;
+                if (db1.GetQuery().Any(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour))
+                {
+                    decimal gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour).gia;
+
+                    int soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
+                    tong += gia * soluongkhach;
+                }
             }
             return tong;
         }

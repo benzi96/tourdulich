@@ -83,7 +83,9 @@ namespace tourdulichweb.Controllers
             }
             ViewBag.iddoandulich = new SelectList(pttbus.db1.GetAll(), "id", "tendoan", phieuthanhtoan.iddoandulich);
             ViewBag.idloaiphieu = new SelectList(pttbus.db2.GetAll(), "id", "tenloaiphieu", phieuthanhtoan.idloaiphieu);
-            return View(phieuthanhtoan);
+            phieuthanhtoanviewmodel pttvm = new phieuthanhtoanviewmodel();
+            pttvm.phieuthanhtoan = phieuthanhtoan;
+            return View(pttvm);
         }
 
         // POST: phieuthanhtoans/Edit/5

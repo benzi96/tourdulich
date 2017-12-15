@@ -30,7 +30,7 @@ namespace tourdulichweb.Controllers
 
             thongkenhanvienviewmodel tknvvm = new thongkenhanvienviewmodel();
             tknvvm.sldts = sls;
-            ViewBag.idnhanvien = new SelectList(tkbus.db.GetAll(), "id", "tenkh");
+            ViewBag.idnhanvien = new SelectList(tkbus.listnv(), "id", "socmnd_tenkh");
             return View(tknvvm);
         }
 
