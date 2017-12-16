@@ -93,16 +93,19 @@ namespace tourdulichweb.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,tenphieu,idloaiphieu,iddoandulich,ngaytao")] phieuthanhtoan phieuthanhtoan)
+        public ActionResult Edit([Bind(Include = "id,tenphieu,idloaiphieu,iddoandulich,ngaytao")] phieuthanhtoan phieuthanhtoan,
+                                 [Bind(Prefix = "ct")] chitietthanhtoan[] chitietthanhtoan)
         {
             if (ModelState.IsValid)
             {
-                pttbus.update(phieuthanhtoan);
+                pttbus.update(phieuthanhtoan, chitietthanhtoan);
                 return RedirectToAction("Index");
             }
             ViewBag.iddoandulich = new SelectList(pttbus.db1.GetAll(), "id", "tendoan", phieuthanhtoan.iddoandulich);
             ViewBag.idloaiphieu = new SelectList(pttbus.db2.GetAll(), "id", "tenloaiphieu", phieuthanhtoan.idloaiphieu);
-            return View(phieuthanhtoan);
+            phieuthanhtoanviewmodel pttvm = new phieuthanhtoanviewmodel();
+            pttvm.phieuthanhtoan = phieuthanhtoan;
+            return View(pttvm);
         }
 
         //// GET: phieuthanhtoans/Delete/5

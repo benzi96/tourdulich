@@ -82,6 +82,10 @@ namespace tourdulichwin.forms
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            giatourdgv.DataSource = gtbus.listgiatourhientai();
+        }
         #endregion
 
         #region method
@@ -99,5 +103,6 @@ namespace tourdulichwin.forms
             currentid = -1;
         }
         #endregion
+
     }
 }

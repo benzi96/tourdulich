@@ -12,11 +12,13 @@ namespace Core.bus
         public IRepository<phieuthanhtoan> db;
         public IRepository<doandulich> db1;
         public IRepository<loaiphieu> db2;
+        public IRepository<chitietthanhtoan> db3;
         public phieuthanhtoanbus()
         {
             db = new GenericRepository<phieuthanhtoan>();
             db1 = new GenericRepository<doandulich>();
             db2 = new GenericRepository<loaiphieu>();
+            db3 = new GenericRepository<chitietthanhtoan>();
         }
 
         public List<loaiphieu> listnew()
@@ -38,8 +40,21 @@ namespace Core.bus
             }
             return db.Add(ptt);
         }
-        public bool update(phieuthanhtoan ptt)
+        public bool update(phieuthanhtoan ptt, chitietthanhtoan[] cttt)
         {
+            List<chitietthanhtoan> ctttcu = db3.Find(c => c.idphieuthanhtoan == ptt.id).ToList();
+            foreach(chitietthanhtoan ct in ctttcu)
+            {
+                db3.Delete(ct);
+            }
+            int i = 1;
+            foreach (chitietthanhtoan ct in cttt)
+            {
+                ct.idphieuthanhtoan = ptt.id;
+                ct.idchitiet = i;
+                i++;
+                db3.Add(ct);
+            }
             return db.Update(ptt);
         }
     }

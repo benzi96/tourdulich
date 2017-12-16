@@ -27,5 +27,7 @@ namespace Core.dto
             tungay = (DateTime)o.tungay;
             denngay = (DateTime)o.denngay;
         }
+        public giatourdto()
+        { }
     }
 }

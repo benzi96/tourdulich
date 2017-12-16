@@ -23,6 +23,33 @@ namespace Core.bus
         {
             return giatourrespository.GetAll().Select(c => new giatourdto(c)).ToList();
         }
+
+	    public List<giatourdto> listgiatourhientai()
+        {
+	        DateTime a= DateTime.Now;
+            List<giatourdto> gts = new List<giatourdto>();
+            foreach (tour t in tourrespository.GetAll())
+            {
+                giatourdto gt = new giatourdto();
+                if (giatourrespository.GetQuery().Any(c => c.tungay < a && c.denngay > a && c.idtour == t.id))
+                {
+                    gt = new giatourdto(giatourrespository.Find(c => c.tungay < a && c.denngay > a && c.idtour == t.id)
+                                                                     .OrderByDescending(c => c.id)
+                                                                     .FirstOrDefault());
+                }
+                else
+                {
+                    gt.ID = 0;
+                    gt.tent = t.tentour;
+                    gt.gia = 0;
+                    gt.tungay = a;
+                    gt.denngay = a;
+                }
+                gts.Add(gt);
+            }
+            return gts;
+        }
+
         public Dictionary<string, string> listt()
         {
             Dictionary<string, string> ts = new Dictionary<string, string>();

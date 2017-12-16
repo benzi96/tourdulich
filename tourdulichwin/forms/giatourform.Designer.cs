@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.giatourpanel = new System.Windows.Forms.Panel();
+            this.denngaydtp = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tungaydtp = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.giatournud = new System.Windows.Forms.NumericUpDown();
             this.tentcbb = new System.Windows.Forms.ComboBox();
             this.suagtbtn = new System.Windows.Forms.Button();
             this.endeditbtn = new System.Windows.Forms.Button();
@@ -36,18 +41,15 @@
             this.themgtbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.giatournud = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tungaydtp = new System.Windows.Forms.DateTimePicker();
-            this.denngaydtp = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.giatourpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.giatourdgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.giatournud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giatourdgv)).BeginInit();
             this.SuspendLayout();
             // 
             // giatourpanel
             // 
+            this.giatourpanel.Controls.Add(this.button1);
             this.giatourpanel.Controls.Add(this.denngaydtp);
             this.giatourpanel.Controls.Add(this.label4);
             this.giatourpanel.Controls.Add(this.tungaydtp);
@@ -65,6 +67,53 @@
             this.giatourpanel.Name = "giatourpanel";
             this.giatourpanel.Size = new System.Drawing.Size(447, 470);
             this.giatourpanel.TabIndex = 1;
+            // 
+            // denngaydtp
+            // 
+            this.denngaydtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.denngaydtp.Location = new System.Drawing.Point(134, 163);
+            this.denngaydtp.Name = "denngaydtp";
+            this.denngaydtp.Size = new System.Drawing.Size(207, 20);
+            this.denngaydtp.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(54, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Đến ngày";
+            // 
+            // tungaydtp
+            // 
+            this.tungaydtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.tungaydtp.Location = new System.Drawing.Point(134, 128);
+            this.tungaydtp.Name = "tungaydtp";
+            this.tungaydtp.Size = new System.Drawing.Size(207, 20);
+            this.tungaydtp.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(54, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Từ ngày";
+            // 
+            // giatournud
+            // 
+            this.giatournud.Location = new System.Drawing.Point(134, 95);
+            this.giatournud.Maximum = new decimal(new int[] {
+            1000000000,
+            0,
+            0,
+            0});
+            this.giatournud.Name = "giatournud";
+            this.giatournud.Size = new System.Drawing.Size(207, 20);
+            this.giatournud.TabIndex = 1;
+            this.giatournud.ThousandsSeparator = true;
             // 
             // tentcbb
             // 
@@ -136,52 +185,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Giá tour";
             // 
-            // giatournud
+            // button1
             // 
-            this.giatournud.Location = new System.Drawing.Point(134, 95);
-            this.giatournud.Maximum = new decimal(new int[] {
-            1000000000,
-            0,
-            0,
-            0});
-            this.giatournud.Name = "giatournud";
-            this.giatournud.Size = new System.Drawing.Size(207, 20);
-            this.giatournud.TabIndex = 1;
-            this.giatournud.ThousandsSeparator = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 134);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Từ ngày";
-            // 
-            // tungaydtp
-            // 
-            this.tungaydtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.tungaydtp.Location = new System.Drawing.Point(134, 128);
-            this.tungaydtp.Name = "tungaydtp";
-            this.tungaydtp.Size = new System.Drawing.Size(207, 20);
-            this.tungaydtp.TabIndex = 2;
-            // 
-            // denngaydtp
-            // 
-            this.denngaydtp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.denngaydtp.Location = new System.Drawing.Point(134, 163);
-            this.denngaydtp.Name = "denngaydtp";
-            this.denngaydtp.Size = new System.Drawing.Size(207, 20);
-            this.denngaydtp.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 169);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Đến ngày";
+            this.button1.Location = new System.Drawing.Point(12, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Giá tour hiện tại";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // giatourform
             // 
@@ -193,8 +205,8 @@
             this.Text = "giatourform";
             this.giatourpanel.ResumeLayout(false);
             this.giatourpanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.giatourdgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.giatournud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giatourdgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,5 +226,6 @@
         private System.Windows.Forms.DateTimePicker tungaydtp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown giatournud;
+        private System.Windows.Forms.Button button1;
     }
 }
