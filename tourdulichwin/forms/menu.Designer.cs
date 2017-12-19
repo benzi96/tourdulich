@@ -40,9 +40,9 @@
             // 
             // ttmenubtn
             // 
-            this.ttmenubtn.Location = new System.Drawing.Point(83, 49);
+            this.ttmenubtn.Location = new System.Drawing.Point(45, 49);
             this.ttmenubtn.Name = "ttmenubtn";
-            this.ttmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.ttmenubtn.Size = new System.Drawing.Size(174, 23);
             this.ttmenubtn.TabIndex = 0;
             this.ttmenubtn.Text = "Tỉnh thành";
             this.ttmenubtn.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // 
             // loaihinhmenubtn
             // 
-            this.loaihinhmenubtn.Location = new System.Drawing.Point(83, 97);
+            this.loaihinhmenubtn.Location = new System.Drawing.Point(45, 97);
             this.loaihinhmenubtn.Name = "loaihinhmenubtn";
-            this.loaihinhmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.loaihinhmenubtn.Size = new System.Drawing.Size(174, 23);
             this.loaihinhmenubtn.TabIndex = 1;
             this.loaihinhmenubtn.Text = "Loại hình du lịch";
             this.loaihinhmenubtn.UseVisualStyleBackColor = true;
@@ -60,9 +60,9 @@
             // 
             // ddmenubtn
             // 
-            this.ddmenubtn.Location = new System.Drawing.Point(83, 142);
+            this.ddmenubtn.Location = new System.Drawing.Point(45, 142);
             this.ddmenubtn.Name = "ddmenubtn";
-            this.ddmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.ddmenubtn.Size = new System.Drawing.Size(174, 23);
             this.ddmenubtn.TabIndex = 2;
             this.ddmenubtn.Text = "Địa điểm";
             this.ddmenubtn.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             // 
             // tourmenubtn
             // 
-            this.tourmenubtn.Location = new System.Drawing.Point(83, 189);
+            this.tourmenubtn.Location = new System.Drawing.Point(45, 189);
             this.tourmenubtn.Name = "tourmenubtn";
-            this.tourmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.tourmenubtn.Size = new System.Drawing.Size(174, 23);
             this.tourmenubtn.TabIndex = 3;
             this.tourmenubtn.Text = "Tour";
             this.tourmenubtn.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@
             // 
             // giatourmenubtn
             // 
-            this.giatourmenubtn.Location = new System.Drawing.Point(83, 236);
+            this.giatourmenubtn.Location = new System.Drawing.Point(45, 236);
             this.giatourmenubtn.Name = "giatourmenubtn";
-            this.giatourmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.giatourmenubtn.Size = new System.Drawing.Size(174, 23);
             this.giatourmenubtn.TabIndex = 4;
             this.giatourmenubtn.Text = "Giá tour";
             this.giatourmenubtn.UseVisualStyleBackColor = true;
@@ -90,9 +90,9 @@
             // 
             // ctdtqmenubtn
             // 
-            this.ctdtqmenubtn.Location = new System.Drawing.Point(67, 284);
+            this.ctdtqmenubtn.Location = new System.Drawing.Point(45, 284);
             this.ctdtqmenubtn.Name = "ctdtqmenubtn";
-            this.ctdtqmenubtn.Size = new System.Drawing.Size(137, 23);
+            this.ctdtqmenubtn.Size = new System.Drawing.Size(174, 23);
             this.ctdtqmenubtn.TabIndex = 5;
             this.ctdtqmenubtn.Text = "Chi tiết diểm tham quan";
             this.ctdtqmenubtn.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@
             // 
             // tktourmenubtn
             // 
-            this.tktourmenubtn.Location = new System.Drawing.Point(83, 329);
+            this.tktourmenubtn.Location = new System.Drawing.Point(45, 329);
             this.tktourmenubtn.Name = "tktourmenubtn";
-            this.tktourmenubtn.Size = new System.Drawing.Size(104, 23);
+            this.tktourmenubtn.Size = new System.Drawing.Size(174, 23);
             this.tktourmenubtn.TabIndex = 6;
             this.tktourmenubtn.Text = "Thống kê tour";
             this.tktourmenubtn.UseVisualStyleBackColor = true;

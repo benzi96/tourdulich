@@ -50,7 +50,11 @@ namespace Core.bus
                 chitietdoanhthu ctdt = new chitietdoanhthu();
                 ctdt.tendoan = ct.tendoan;
                 ctdt.tentour = ct.tour.tentour;
-                ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour==idtour).gia;
+                if (db1.GetQuery().Any(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour))
+                {
+                    ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour).gia;
+                }
+                else ctdt.gia = 0;
                 ctdt.soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
                 ctdt.tong = ctdt.gia * ctdt.soluongkhach;
                 ctdt.tongchiphi = tkcpbus.tongchiphi(ct.id);
@@ -68,7 +72,11 @@ namespace Core.bus
                 chitietdoanhthu ctdt = new chitietdoanhthu();
                 ctdt.tendoan = ct.tendoan;
                 ctdt.tentour = ct.tour.tentour;
-                ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh).gia;
+                if (db1.GetQuery().Any(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour))
+                {
+                    ctdt.gia = (decimal)db1.GetQuery().OrderByDescending(c => c.id).FirstOrDefault(c => c.tungay <= ct.ngaykhoihanh && c.denngay >= ct.ngaykhoihanh && c.idtour == idtour).gia;
+                }
+                else ctdt.gia = 0;
                 ctdt.soluongkhach = db2.Find(c => c.iddoandulich == ct.id).Count();
                 ctdt.tong = ctdt.gia * ctdt.soluongkhach;
                 ctdt.tongchiphi = tkcpbus.tongchiphi(ct.id);

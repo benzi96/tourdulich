@@ -28,7 +28,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.phieuthanhtoan.idloaiphieu, "idloaiphieu", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("[hieuthanhtoan.idloaiphieu", ViewBag.idloaiphieu as SelectList, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("phieuthanhtoan.idloaiphieu", ViewBag.idloaiphieu as SelectList, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.phieuthanhtoan.idloaiphieu, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -111,4 +111,6 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/mycustomjquery")
 }

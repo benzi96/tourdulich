@@ -38,6 +38,7 @@ namespace Core.bus
                                         && c.idnhanvien == id 
                                         && c.doandulich.ngaykhoihanh >= tungay 
                                         && c.doandulich.ngaykhoihanh <= denngay)
+                                        .Select(c=>c.iddoandulich)
                                         .Distinct().Count();
                 sldts.Add(sl);
             }

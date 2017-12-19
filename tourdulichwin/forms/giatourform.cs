@@ -32,8 +32,8 @@ namespace tourdulichwin.forms
             giatour gt = new giatour();
             gt.gia = giatournud.Value;
             gt.idtour = Convert.ToInt32(((KeyValuePair<string, string>)tentcbb.SelectedItem).Key);
-            gt.tungay = tungaydtp.Value;
-            gt.denngay = denngaydtp.Value;
+            gt.tungay = tungaydtp.Value.Date;
+            gt.denngay = denngaydtp.Value.Date;
             bool s = gtbus.add(gt);
             helpers.successorerror(s);
             if (s)

@@ -141,7 +141,7 @@
             this.ClientSize = new System.Drawing.Size(441, 456);
             this.Controls.Add(this.diadiempanel);
             this.Name = "diadiemform";
-            this.Text = "tinhthanhform";
+            this.Text = "diadiemform";
             this.diadiempanel.ResumeLayout(false);
             this.diadiempanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tinhthanhdgv)).EndInit();

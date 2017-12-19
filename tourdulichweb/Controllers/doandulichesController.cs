@@ -82,7 +82,9 @@ namespace tourdulichweb.Controllers
             }
             ViewBag.idkhachhang = new SelectList(ddlbus.listkh(), "id", "socmnd_tenkh");
             ViewBag.idtour = new SelectList(ddlbus.db1.GetAll(), "id", "tentour", doandulich.idtour);
-            return View(doandulich);
+            doandulichviewmodel ddlvm = new doandulichviewmodel();
+            ddlvm.doandulich = doandulich;
+            return View(ddlvm);
         }
 
         // POST: doanduliches/Edit/5
